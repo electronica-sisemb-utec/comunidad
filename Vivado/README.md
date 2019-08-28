@@ -19,8 +19,8 @@ Speed: -1
 Se empieza a crear un módulo de diseño.
 
 ```
-1. Create New Source
-2. VHDL Module
+1. Add Sources
+2. Add or create design sources
 ```
 
 Una vez creado el módulo de diseño, la herramienta debería generar un código inicial como se muestra en la Figura 1.
@@ -34,7 +34,7 @@ use IEEE.STD_LOGIC_1164.ALL;
 entity AND_gate is
     Port(
         A, B: in std_logic;
-        C: out 
+        C: out std_logic
     );
 end AND_gate;
 
@@ -47,15 +47,15 @@ C <= A and B;
 end Behavioral;
 ```
 
-Finalmente se selecciona `Synthesize - XST`. En la consola no debería aparecer ningún error. El esquemático RTL se encuentra en `RTL ANALYSIS` y el esquemático tecnológico se encuentra en `SYNTHESIS`.
+Finalmente se selecciona `Run Synthesis`. En la consola no debería aparecer ningún error. El esquemático RTL se encuentra en `RTL ANALYSIS` y el esquemático tecnológico se encuentra en `SYNTHESIS`.
 
 ### Simulación
 
 Es necesario crear un Módulo de Test Bench.
 
 ```
-1. Create New Source
-2. VHDL Test Bench
+1. Add Sources
+2. Add or create simulation sources
 ```
 
 El Test Bench no necesita declaración de variables y la entidad tiene que estar vacía. Para realizar la simulación, se abarcan tres etapas:
@@ -86,7 +86,7 @@ end AND_gate_tb;
 
 architecture Behavioral of AND_gate_tb is
 
--- Instanciación del componente (Parte 1)
+-- Declaración del componente
 component AND_gate
     Port (
         A,B: in std_logic;
@@ -101,7 +101,7 @@ signal C_tb : std_logic := '0';
 
 begin
 
--- Instanciación del componente (Parte 2)
+-- Instanciación del componente
 uut: AND_gate port map (
     A => A_tb,
     B => B_tb,
@@ -132,15 +132,15 @@ begin
 end process;
 end Behavioral;
 ```
-Finalmente, para realizar la simulación se selecciona `Simulate Behavioral`.
+Finalmente, para realizar la simulación se selecciona `Run Simulation`.
 
 ### Implementación
 
 Se necesita un archivo Constraint:
 
 ```
-1. Create New Source
-2. Implementation Constraint File
+1. Add Sources
+2. Add or create constraints
 ```
 
 El archivo de implementación tiene la extensión *.xdc*. Estos archivos mapean las entradas y salidas del diseño a implementar con los puertos I/O de la tarjeta. Por ejemplo, las ***entradas A y B*** podrían mapearse a dos interruptores y la ***salida C*** a un led. Una vez realizado el constraint se selecciona:
