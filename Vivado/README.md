@@ -82,10 +82,6 @@ library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
 
 entity AND_gate_tb is
-    Port(
-        A, B: in std_logic;
-        C: out 
-    );
 end AND_gate_tb;
 
 architecture Behavioral of AND_gate_tb is
