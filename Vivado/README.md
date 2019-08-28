@@ -22,6 +22,7 @@ Se empieza a crear un módulo de diseño.
 1. Create New Source
 2. VHDL Module
 ```
+
 Una vez creado el módulo de diseño, la herramienta debería generar un código inicial como se muestra en la Figura 1.
 
 A continuación se declaran las variables de entrada y salida y se realiza la operación lógica AND como se muestra a continuación:
@@ -137,6 +138,26 @@ end Behavioral;
 ```
 Finalmente, para realizar la simulación se selecciona `Simulate Behavioral`.
 
+### Implementación
+
+Se necesita un archivo Constraint:
+
+```
+1. Create New Source
+2. Implementation Constraint File
+```
+
+El archivo de implementación tiene la extensión *.xdc*. Estos archivos mapean las entradas y salidas del diseño a implementar con los puertos I/O de la tarjeta. Por ejemplo, las ***entradas A y B*** podrían mapearse a dos interruptores y la ***salida C*** a un led. Una vez realizado el constraint se selecciona:
+
+```
+1. Implement Design 
+2. Generate programming file
+3. Configure target device
+4. Click derecho a la tarjeta
+5. Program
+```
+
+
 
 ## Autores
 
@@ -146,4 +167,4 @@ Finalmente, para realizar la simulación se selecciona `Simulate Behavioral`.
 
 ## Reconocimientos
 
-* [Nelson Soberón](https://www.google.com/) por la estructura de la documentación.
+* [Nelson Soberón](https://github.com/Nelsonxxji) por el contenido y la estructura de la documentación.
