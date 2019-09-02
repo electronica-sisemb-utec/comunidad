@@ -146,14 +146,13 @@ Se necesita un archivo Constraint:
 El archivo de implementación tiene la extensión *.xdc*. Estos archivos mapean las entradas y salidas del diseño a implementar con los puertos I/O de la tarjeta. Por ejemplo, las ***entradas A y B*** podrían mapearse a dos interruptores y la ***salida C*** a un led. Una vez realizado el constraint se selecciona:
 
 ```
-1. Implement Design 
-2. Generate programming file
-3. Configure target device
-4. Click derecho a la tarjeta
-5. Program
+1. Run Implementation
+2. Generate Bitstream
+3. Open Hardware Manager
+4. Open Target
+5. Autoconnect
+6. Program
 ```
-
-
 
 ## Autores
 
