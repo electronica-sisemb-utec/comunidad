@@ -10,7 +10,7 @@ Contar con el  driver USBASP. Si no lo tienes, haz click [aquí](./README2.md).
 
 - ### Paso 1
 
-Descarga ***SinaProg 2.1*** haciendo click [aquí]().
+Descarga ***SinaProg 2.1*** haciendo click [aquí](https://github.com/electronica-utec/comunidad/raw/master/Embebidos/resources/SinaProg%202.1.rar).
 
 - ### Paso 2
 

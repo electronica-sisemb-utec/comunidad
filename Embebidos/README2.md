@@ -11,7 +11,7 @@ Conectar el USBASP en el puerto USB. Ingresar a ***"Administrador de dispositivo
 
 - ### Paso 2
 
-Descargar el comprimido ***"Windows USBasp Drivers"*** haciendo click [aquí](). Descomprimir en la carpeta de su elección.
+Descargar el comprimido ***"Windows USBasp Drivers"*** haciendo click [aquí](https://github.com/electronica-utec/comunidad/raw/master/Embebidos/resources/Windows%20USBasp%20Drivers.zip). Descomprimir en la carpeta de su elección.
 
 - ### Paso 3
 
