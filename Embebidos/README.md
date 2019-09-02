@@ -1,6 +1,6 @@
 # Programar con Atmel Studio y USBASP
 
-Guía básica de la configuración de la herramienta de Atmel Studio 7 para programar con el conector USBASP.
+Guía básica de la configuración de la herramienta de Atmel Studio 7 para programar con el conector USBASP. Si quieres ver la conexión del conector USBASP, haz click [aquí](./README1.md).
 
 ## Requisito Previo
 
@@ -48,7 +48,7 @@ Aceptar y cerrar.  Deberá aparecer USBASP en la pestaña *Tools* como se muestr
 
 ## Prueba
 
-Para subir el código de un proyecto al microcontrolador, en este caso un ATmega328P, solo es necesario presionar la opción *USBASP* previamente configurada. Los resultados en la ventana Output deberán ser similares a la siguiente imagen.
+Para subir el código de un proyecto al microcontrolador, en este caso un ATmega328P, solo es necesario presionar la opción *USBASP* previamente configurada. Los resultados en la ventana Output deberán ser similares a la siguiente imagen. Si quieres ver la conexión del conector USBASP, haz click [aquí](./README1.md).
 
 <img style="width: 85%;" src="./images/a-i05.JPG" />
 
